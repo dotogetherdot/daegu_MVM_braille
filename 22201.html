@@ -2,14 +2,88 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>용산역 설화명곡 방면 6-3 자판기 안내</title>
+
+<style>
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.info {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 3px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 12px 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+}
+
+/* 저시력 확대 모드 */
+.large-text {
+  font-size: 26px;
+  line-height: 1.8;
+}
+
+.large-text h2 {
+  font-size: 32px;
+}
+
+.large-text button {
+  font-size: 20px;
+  padding: 14px;
+}
+
+.large-text .info {
+  font-size: 20px;
+}
+</style>
+
+<script>
+function toggleLargeText() {
+  document.body.classList.toggle("large-text");
+}
+</script>
+
 </head>
 
 <body>
 
 <h2>용산역 설화명곡방향 자판기</h2>
 
-<p>근처 승강장: 설화명곡 방향 6-3</p>
+<button onclick="toggleLargeText()">
+▶ 저시력인을 위한 확대 버전
+</button>
+
+<div class="info">
+근처 승강장: 설화명곡 방향 6-3
+</div>
 
 <hr>
 
@@ -50,7 +124,7 @@
 <p>3열 9번 데자와 로얄 밀크티 캔 900원</p>
 <p>3열 10번 데자와 로얄 밀크티 캔 900원</p>
 
-<br>
+<hr>
 
 <h3>오류 제보</h3>
 <a href="https://naver.me/xB7DoOjr">
