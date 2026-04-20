@@ -35,10 +35,7 @@ button {
 /* 기본 */
 .name::after { content:' '; }
 .name, .price { display:inline; }
-br { display:none; }
-.large br {
-  display:block;
-}
+
 /* 확대 */
 .large {
   font-size:2.8em;
@@ -46,13 +43,18 @@ br { display:none; }
 }
 
 .large .num { display:block; }
-.large .name { display:block; word-break:keep-all; }
-.large .price { display:block; }
+.large .name { display:inline; word-break:keep-all; }
+.large .price { display:inline; }
 
-/* 버튼은 적당히만 확대 */
+/* 버튼 확대 */
 .large button {
+  font-size:1.6em;
+  padding:20px;
+}
+
+/* 제작/문의 확대 */
+.large p {
   font-size:1.2em;
-  padding:16px;
 }
 </style>
 
@@ -60,11 +62,11 @@ br { display:none; }
 function toggleLarge(btn) {
   document.body.classList.toggle('large');
 
-if(document.body.classList.contains('large')) {
-  btn.innerText = '기본 크기로 돌아가기';
-} else {
-  btn.innerText = btn.getAttribute('data-original');
-}
+  if(document.body.classList.contains('large')) {
+    btn.innerText = '기본 크기로 돌아가기';
+  } else {
+    btn.innerText = btn.getAttribute('data-original');
+  }
 }
 </script>
 
