@@ -33,13 +33,13 @@ button {
   font-size:16px;
 }
 
-/* 기본 한줄 유지 */
+/* 기본 한줄 */
 .name::after { content:' '; }
 .name, .price { display:inline; }
 
 br { display:none; }
 
-/* 확대모드 (과하지 않게 조정) */
+/* 확대모드 */
 .large {
   font-size:2.6em;
   line-height:1.5;
@@ -65,16 +65,16 @@ br { display:none; }
   margin-top:4px;
 }
 
-/* 버튼 적당히 확대 */
+/* 버튼 확실히 커지게 */
 .large button {
-  font-size:1.3em;
-  padding:16px;
+  font-size:1.6em !important;
+  padding:20px !important;
 }
 
-/* 제작/문의 작게 */
+/* 제작/문의: 크기는 커지되 줄바꿈 유지 */
 .large p:last-of-type {
-  font-size:0.5em;
-  line-height:1.4;
+  font-size:0.8em;
+  line-height:1.6;
 }
 </style>
 
