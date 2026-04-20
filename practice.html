@@ -1,13 +1,16 @@
-<!DOCTYPE html><html><head>
+"<!DOCTYPE html><html><head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 <style>
 body { font-family: sans-serif; padding:10px; }
+
 h2 {
   text-align:center;
   word-break:keep-all;
+  overflow-wrap:break-word;
 }
+
 p { margin:4px 0; }
 
 .num {
@@ -16,7 +19,7 @@ p { margin:4px 0; }
   border-radius:4px;
   font-weight:bold;
   display:inline-block;
-  margin-right:10px;
+  margin-right:12px;
 }
 
 button {
@@ -30,31 +33,37 @@ button {
   font-size:16px;
 }
 
+/* 기본: 한줄 */
+.name::after {
+  content:' ';
+}
 .name, .price {
   display:inline;
 }
+
 br {
   display:none;
 }
 
 /* 확대모드 */
 .large {
-  font-size:3.2em;
-  line-height:1.5;
+  font-size:3.6em;
+  line-height:1.6;
 }
 
 .large p {
-  margin:12px 0;
+  margin:14px 0;
 }
 
 .large .num {
   display:block;
-  margin-bottom:6px;
+  margin-bottom:8px;
 }
 
 .large .name {
   display:block;
   margin:6px 0;
+  word-break:keep-all;
 }
 
 .large .price {
@@ -62,10 +71,10 @@ br {
   margin-top:4px;
 }
 
-/* 버튼 확대 */
+/* 버튼도 강제 확대 */
 .large button {
-  font-size:1.6em;
-  padding:22px;
+  font-size:1.8em !important;
+  padding:26px !important;
 }
 </style>
 
@@ -81,7 +90,7 @@ function toggleLarge() {
 <span>2호선 용산역</span><br>
 <span>영남대 방면 음료 자판기</span>
 </h2><p style='color:#555; margin-bottom:10px;'>
-<b>자판기 위치:</b> 영남대 방면 6-3 앞
+<b>자판기 위치:</b> 영남대 방면 <span aria-label='6 다시 3'>6-3</span> 앞
 </p><button onclick='toggleLarge()' style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px; font-size:16px;'>확대해서 보려면 터치하세요</button><p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 1번</span><br><span class='name'>데미소다 애플</span><br><span class='price'>캔 900원</span></p>
 
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 2번</span><br><span class='name'>데미소다 복숭아</span><br><span class='price'>캔 900원</span></p>
@@ -147,8 +156,6 @@ function toggleLarge() {
 <button style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px; font-size:16px;'>
 점자 오류 제보하기
 </button>
-</a><div style='text-align:center; margin-top:10px;'>
+</a><p style='text-align:center; margin-top:12px;'>제작: 두다닷 DODADOT<br>문의: dodadot@naver.com</p><div style='text-align:center; margin-top:10px;'>
 <img src='dodadot-logo.png' width='120'>
-</div><div style='text-align:center; margin-top:10px;'>
-<img src='dodadot-logo.png' width='120'>
-</div></body></html>
+</div></body></html>"
