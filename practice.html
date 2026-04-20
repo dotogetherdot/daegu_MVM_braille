@@ -35,9 +35,13 @@ button {
 /* 기본 */
 .name::after { content:' '; }
 .name, .price { display:inline; }
-br { display:none; }
-.large br {
-  display:block;
+.name, .price {
+  display:inline;
+}
+
+.large .name,
+.large .price {
+  display:inline;
 }
 /* 확대 */
 .large {
@@ -75,7 +79,8 @@ function toggleLarge(btn) {
 <span>영남대 방면 음료 자판기</span>
 </h2><p style='color:#555; margin-bottom:10px;'>
 <b>자판기 위치:</b> 영남대 방면 6-3 앞
-</p><button onclick='toggleLarge(this)' style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px; font-size:16px;'>확대해서 보려면 터치하세요</button><p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 1번</span><br><span class='name'>데미소다 애플</span><br><span class='price'>캔 900원</span></p>
+</p><button onclick=""toggleLarge(this)"" 
+style=""width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px; font-size:16px;"">확대해서 보기 버튼</button><p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 1번</span><br><span class='name'>데미소다 애플</span><br><span class='price'>캔 900원</span></p>
 
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 2번</span><br><span class='name'>데미소다 복숭아</span><br><span class='price'>캔 900원</span></p>
 
