@@ -8,7 +8,6 @@ body { font-family: sans-serif; padding:10px; }
 h2 {
   text-align:center;
   word-break:keep-all;
-  overflow-wrap:break-word;
 }
 
 p { margin:4px 0; }
@@ -33,45 +32,27 @@ button {
   font-size:16px;
 }
 
-/* 기본 한줄 */
+/* 기본 */
 .name::after { content:' '; }
 .name, .price { display:inline; }
-
 br { display:none; }
 
-/* 확대모드 */
+/* 확대 */
 .large {
   font-size:2.8em;
   line-height:1.5;
 }
 
-.large p {
-  margin:14px 0;
-}
+.large .num { display:block; }
+.large .name { display:block; }
+.large .price { display:block; }
 
-.large .num {
-  display:block;
-  margin-bottom:6px;
-}
-
-.large .name {
-  display:block;
-  margin:6px 0;
-  word-break:keep-all;
-}
-
-.large .price {
-  display:block;
-  margin-top:4px;
-}
-
-/* 버튼 적당히 확대 */
 .large button {
-  font-size:1.4em !important;
-  padding:18px !important;
+  font-size:1.3em;
+  padding:16px;
 }
 
-/* 제작/문의 줄바꿈 강제 */
+/* 제작/문의 */
 .footer {
   text-align:center;
   margin-top:12px;
@@ -97,7 +78,7 @@ function toggleLarge(btn) {
 <span>2호선 용산역</span><br>
 <span>영남대 방면 음료 자판기</span>
 </h2><p style='color:#555; margin-bottom:10px;'>
-<b>자판기 위치:</b> 영남대 방면 <span aria-label='6 다시 3'>6-3</span> 앞
+<b>자판기 위치:</b> 영남대 방면 6-3 앞
 </p><button onclick='toggleLarge(this)' style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px; font-size:16px;'>확대해서 보려면 터치하세요</button><p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 1번</span><br><span class='name'>데미소다 애플</span><br><span class='price'>캔 900원</span></p>
 
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 2번</span><br><span class='name'>데미소다 복숭아</span><br><span class='price'>캔 900원</span></p>
@@ -159,10 +140,6 @@ function toggleLarge(btn) {
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>3열 9번</span><br><span class='name'>데자와 로얄 밀크티</span><br><span class='price'>캔 900원</span></p>
 
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>3열 10번</span><br><span class='name'>데자와 로얄 밀크티</span><br><span class='price'>캔 900원</span></p>
-<a href='https://naver.me/xB7DoOjr' style='text-decoration:none;'>
-<button style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px; font-size:16px;'>
-점자 오류<br>제보하기
-</button>
-</a><div class='footer'>제작: 두다닷 DODADOT<br>문의: dodadot@naver.com</div><div style='text-align:center; margin-top:10px;'>
+<button onclick='window.open(""https://naver.me/xB7DoOjr"")'>점자 오류<br>제보하기</button><div class='footer'>제작: 두다닷 DODADOT<br>문의: dodadot@naver.com</div><div style='text-align:center; margin-top:10px;'>
 <img src='dodadot-logo.png' width='120'>
 </div></body></html>
