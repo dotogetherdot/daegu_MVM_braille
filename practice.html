@@ -1,4 +1,4 @@
-"<!DOCTYPE html><html><head>
+<!DOCTYPE html><html><head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 
@@ -33,31 +33,25 @@ button {
   font-size:16px;
 }
 
-/* 기본: 한줄 */
-.name::after {
-  content:' ';
-}
-.name, .price {
-  display:inline;
-}
+/* 기본 한줄 유지 */
+.name::after { content:' '; }
+.name, .price { display:inline; }
 
-br {
-  display:none;
-}
+br { display:none; }
 
-/* 확대모드 */
+/* 확대모드 (과하지 않게 조정) */
 .large {
-  font-size:3.6em;
-  line-height:1.6;
+  font-size:2.6em;
+  line-height:1.5;
 }
 
 .large p {
-  margin:14px 0;
+  margin:12px 0;
 }
 
 .large .num {
   display:block;
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
 
 .large .name {
@@ -71,10 +65,16 @@ br {
   margin-top:4px;
 }
 
-/* 버튼도 강제 확대 */
+/* 버튼 적당히 확대 */
 .large button {
-  font-size:1.8em !important;
-  padding:26px !important;
+  font-size:1.3em;
+  padding:16px;
+}
+
+/* 제작/문의 작게 */
+.large p:last-of-type {
+  font-size:0.5em;
+  line-height:1.4;
 }
 </style>
 
@@ -158,4 +158,4 @@ function toggleLarge() {
 </button>
 </a><p style='text-align:center; margin-top:12px;'>제작: 두다닷 DODADOT<br>문의: dodadot@naver.com</p><div style='text-align:center; margin-top:10px;'>
 <img src='dodadot-logo.png' width='120'>
-</div></body></html>"
+</div></body></html>
