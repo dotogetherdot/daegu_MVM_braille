@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<style>
+body { font-family: sans-serif; padding:10px; }
+
+h2 {
+  text-align:center;
+  word-break:keep-all;
+}
+
+p { margin:4px 0; }
+
+.num {
+  background:#eee;
+  padding:2px 6px;
+  border-radius:4px;
+  font-weight:bold;
+  display:inline-block;
+  margin-right:12px;
+}
+
+button {
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  background:#000;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+}
+
+/* 기본 */
+.name::after { content:' '; }
+.name, .price { display:inline; }
+
+/* 🔥 확대 */
+.large {
+  font-size:2.8em;
+  line-height:1.5;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+
+/* 🔥 핵심: 상품은 한 줄 유지 + 자동 줄바꿈 */
+.large .num { display:block; }
+
+.large .name,
+.large .price {
+  display:inline;
+  word-break:keep-all;
+}
+
+/* 🔥 버튼 확실하게 크게 */
+.large button {
+  font-size:1.6em;
+  padding:26px 20px;
+  width:100%;
+  box-sizing:border-box;
+}
+
+
+/* 제작/문의 확대 */
+.large p {
+  font-size:1.3em !important;
+}
+</style>
+
+<script>
+function toggleLarge(btn) {
+  document.body.classList.toggle('large');
+
+  if(document.body.classList.contains('large')) {
+    btn.innerText = '기본 크기로 돌아가기';
+  } else {
+    btn.innerText = btn.getAttribute('data-original');
+  }
+}
+</script>
+
+<title>1호선 방촌역 설화명곡 방면 위치 미입력 자판기 안내</title>
+
+</head><body><h1 style='position:absolute; left:-9999px;'>1호선 방촌역 설화명곡 방면 위치 미입력 자판기 안내</h1><h2 style='text-align:center; line-height:1.4;'>
+<span>1호선 방촌역</span><br>
+<span>설화명곡 방면 음료 자판기</span>
+</h2><p style='color:#555; margin-bottom:10px;'>
+<b>자판기 위치:</b> 설화명곡 방면 위치 미입력
+</p><button onclick='toggleLarge(this)' data-original='확대해서 보기' 
+style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px;'>확대해서 보기</button><p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 오란씨 파인애플번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>2열 오란씨 오렌지번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>3열 오라떼 복숭아번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>4열 오라떼 사과번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>5열 나랑드사이다 제로번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>6열 나랑드사이다 제로번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>7열 포카리스웨트번</span> <span class='name'>페트</span> <span class='price'>1800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>8열 포카리스웨트번</span> <span class='name'>페트</span> <span class='price'>1800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>9열 마신다 먹는샘물번</span> <span class='name'>페트</span> <span class='price'>800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>10열 마신다 먹는샘물번</span> <span class='name'>페트</span> <span class='price'>800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 오로나민씨번</span> <span class='name'>병</span> <span class='price'>1200 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>2열 오로나민씨번</span> <span class='name'>병</span> <span class='price'>1200 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>3열 디앤카페 카라멜라떼번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>4열 컨피던스번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>5열 컨피던스번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>6열 데미소다 복숭아번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>7열 데미소다 레몬번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>8열 데미소다 애플번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>9열 포카리스웨트번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>10열 포카리스웨트번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 디앤카페 오리지널번</span> <span class='name'>캔</span> <span class='price'>800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>2열 디앤카페 오리지널번</span> <span class='name'>캔</span> <span class='price'>800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>3열 디앤카페 오리지널번</span> <span class='name'>캔</span> <span class='price'>800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>4열 디앤카페 오리지널번</span> <span class='name'>캔</span> <span class='price'>800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>5열 디앤카페 오리지널번</span> <span class='name'>캔</span> <span class='price'>800 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>6열 데자와 로얄 밀크티번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>7열 데자와 로얄 밀크티번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>8열 데자와 로얄 밀크티번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>9열 디앤카페 카라멜라떼번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>10열 디앤카페 카라멜라떼번</span> <span class='name'>캔</span> <span class='price'>1000 원</span></p>
+<button onclick='window.open(""https://naver.me/xB7DoOjr"")' 
+style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px;'>
+점자 오류 제보
+</button><p style='text-align:center; margin-top:12px;'>제작: 두다닷 DODADOT</p><p style='text-align:center; margin-top:4px;'>문의: dodadot@naver.com</p><div style='text-align:center; margin-top:10px;'>
+<img src='dodadot-logo.png' width='120'>
+</div></body></html>
