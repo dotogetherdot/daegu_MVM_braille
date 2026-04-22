@@ -5,15 +5,22 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 <style>
-body { font-family: sans-serif; padding:10px; }
+body { 
+  font-family: sans-serif; 
+  padding:10px;
+  line-height:1.8; /* 🔥 전체 줄간격 증가 */
+}
 
 h2 {
   text-align:center;
   word-break:keep-all;
-  line-height:1.4;
+  line-height:1.5;
 }
 
-p { margin:8px 0; }
+p { 
+  margin:10px 0;
+  line-height:1.9; /* 🔥 본문 더 넓게 */
+}
 
 button {
   width:100%;
@@ -29,8 +36,7 @@ button {
 /* 확대 */
 .large {
   font-size:2.4em;
-  line-height:1.6;
-  word-break:keep-all;
+  line-height:1.7;
 }
 
 /* 버튼 확대 */
@@ -42,30 +48,21 @@ button {
 /* 본문 확대 */
 .large p {
   font-size:1.2em;
+  line-height:1.8;
 }
 
-/* 🔥 로고 영역 */
+/* 🔥 로고 한 줄 고정 */
 .logo-wrap {
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:16px;
-  flex-wrap:wrap;
+  gap:20px;
   margin-top:10px;
 }
 
 .logo-img {
-  height:50px;
+  height:120px; /* 🔥 고정 높이 */
   object-fit:contain;
-}
-
-/* 🔥 확대 시 세로 정렬 */
-.large .logo-wrap {
-  flex-direction:column;
-}
-
-.large .logo-img {
-  height:70px;
 }
 </style>
 
@@ -145,8 +142,8 @@ function toggleLarge(btn) {
 문의 및 참여: 두다닷 dodadot@naver.com
 </p>
 
-<!-- 🔥 로고 영역 (반응형 + 확대 대응 완료) -->
-<div style='text-align:center; margin-top:10px;'>
+<!-- 🔥 로고 영역 -->
+<div style='text-align:center; margin-top:20px;'>
 
   <div class="logo-wrap">
     <img src='dodadot-logo.png' class="logo-img">
