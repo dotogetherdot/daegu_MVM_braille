@@ -20,9 +20,20 @@ h2 {
 p { 
   margin:10px 0;
   line-height:1.9;
-  word-break:keep-all; /* 🔥 기본도 안정 */
+  word-break:keep-all;
 }
 
+/* 🔥 번호/섹션 공통 스타일 */
+.num {
+  background:#eee;
+  padding:4px 8px;
+  border-radius:5px;
+  font-weight:bold;
+  display:inline-block;
+  margin-bottom:6px;
+}
+
+/* 버튼 */
 button {
   width:100%;
   padding:12px;
@@ -42,11 +53,10 @@ button {
   overflow-wrap:break-word;
 }
 
-/* 🔥 본문 확대 안정 */
+/* 본문 확대 */
 .large p {
   font-size:1.2em;
   line-height:1.8;
-  word-break:keep-all;
 }
 
 /* 버튼 확대 */
@@ -55,7 +65,7 @@ button {
   padding:24px 18px;
 }
 
-/* 🔥 로고 한 줄 유지 */
+/* 🔥 로고 */
 .logo-wrap {
   display:flex;
   justify-content:center;
@@ -106,7 +116,7 @@ function toggleLarge(btn) {
 
 <hr>
 
-<h3>두다닷 소개</h3>
+<p><span class='num'>두다닷 소개</span></p>
 
 <p>
 두다닷은 시각장애인의 점자 정보 접근과 문화예술 참여 확대를 목표로 활동하는 비영리 임의단체입니다. 
@@ -115,7 +125,7 @@ function toggleLarge(btn) {
 
 <hr>
 
-<h3>손끝으로 이용하는 자판기 프로젝트 소개</h3>
+<p><span class='num'>손끝으로 이용하는 자판기 프로젝트 소개</span></p>
 
 <p>
 일상에서 쉽게 접할 수 있는 자판기에는 점자 표기가 있거나, 있어도 잘못 표기된 경우가 많아 시각장애인이 상품 정보를 정확하게 확인하기 어려운 상황이 발생합니다.
@@ -131,7 +141,7 @@ function toggleLarge(btn) {
 
 <hr>
 
-<h3>지원사업 안내</h3>
+<p><span class='num'>지원사업 안내</span></p>
 
 <p>
 이 프로젝트는 대구광역시시민공익활동지원센터의 '2026 시민공익활동 아이디어 씨앗' 지원사업을 통해 진행되었습니다.
@@ -140,9 +150,8 @@ function toggleLarge(btn) {
 
 <hr>
 
-<h3>문의 및 참여</h3>
 <p>
-문의 및 참여: 두다닷 dodadot@naver.com
+<span class='num'>문의 및 참여</span> dodadot@naver.com
 </p>
 
 <!-- 로고 -->
