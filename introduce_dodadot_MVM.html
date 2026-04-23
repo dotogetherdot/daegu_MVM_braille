@@ -8,7 +8,7 @@
 body { 
   font-family: sans-serif; 
   padding:10px;
-  line-height:1.8; /* 🔥 전체 줄간격 증가 */
+  line-height:1.8;
 }
 
 h2 {
@@ -19,7 +19,8 @@ h2 {
 
 p { 
   margin:10px 0;
-  line-height:1.9; /* 🔥 본문 더 넓게 */
+  line-height:1.9;
+  word-break:keep-all; /* 🔥 기본도 안정 */
 }
 
 button {
@@ -33,27 +34,28 @@ button {
   font-size:16px;
 }
 
-/* 확대 */
+/* 🔥 확대 */
 .large {
   font-size:2.4em;
   line-height:1.7;
-  word-break:normal;
+  word-break:keep-all;
   overflow-wrap:break-word;
 }
-  
+
+/* 🔥 본문 확대 안정 */
+.large p {
+  font-size:1.2em;
+  line-height:1.8;
+  word-break:keep-all;
+}
+
 /* 버튼 확대 */
 .large button {
   font-size:1.6em;
   padding:24px 18px;
 }
 
-/* 본문 확대 */
-.large p {
-  font-size:1.2em;
-  line-height:1.8;
-}
-
-/* 🔥 로고 한 줄 고정 */
+/* 🔥 로고 한 줄 유지 */
 .logo-wrap {
   display:flex;
   justify-content:center;
@@ -143,7 +145,7 @@ function toggleLarge(btn) {
 문의 및 참여: 두다닷 dodadot@naver.com
 </p>
 
-<!-- 🔥 로고 영역 -->
+<!-- 로고 -->
 <div style='text-align:center; margin-top:16px;'>
 
   <div class="logo-wrap">
@@ -156,3 +158,6 @@ function toggleLarge(btn) {
   </p>
 
 </div>
+
+</body>
+</html>
