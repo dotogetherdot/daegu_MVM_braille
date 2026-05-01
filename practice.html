@@ -87,7 +87,9 @@ function toggleLarge(btn) {
 <span>영남대 방면 음료 자판기</span>
 </h2><p style='color:#555; margin-bottom:10px;'>
 <b>자판기 위치:</b> 영남대 방면 6-3 앞
-</p><button onclick='toggleLarge(this)' data-original='확대해서 보기' 
+</p><button onclick='document.getElementById("all-products").focus()' style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px;'>전체 상품목록 듣기</button><div id='all-products' tabindex='0' aria-label='1열 1번 데미소다 애플 캔 900원. 1열 2번 데미소다 복숭아 캔 900원. 1열 3번 데미소다 레몬 캔 900원. 1열 4번 오란씨 오렌지 캔 800원. 1열 5번 오란씨 파인애플 캔 800원. 1열 6번 오로나민씨 병 1000원. 1열 7번 포카리스웨트 페트 1800원. 1열 8번 마신다 먹는샘물 페트 800원. 1열 9번 마신다 먹는샘물 페트 800원. 1열 10번 마신다 먹는샘물 페트 800원. 2열 1번 포카리스웨트 캔 1000원. 2열 2번 포카리스웨트 캔 1000원. 2열 3번 포카리스웨트 캔 1000원. 2열 4번 오라떼 딸기 캔 900원. 2열 5번 컨피던스 캔 900원. 2열 6번 나랑드사이다 제로 캔 800원. 2열 7번 나랑드사이다 제로 캔 800원. 2열 8번 데미소다 청포도 캔 900원. 2열 9번 데미소다 청포도 캔 900원. 2열 10번 포카리스웨트 캔 1000원. 3열 1번 디앤카페 오리지널 캔 700원. 3열 2번 디앤카페 오리지널 캔 700원. 3열 3번 디앤카페 오리지널 캔 700원. 3열 4번 디앤카페 오리지널 캔 700원. 3열 5번 디앤카페 카라멜라떼 캔 1000원. 3열 6번 디앤카페 카라멜라떼 캔 1000원. 3열 7번 디앤카페 카라멜라떼 캔 1000원. 3열 8번 디앤카페 카라멜라떼 캔 1000원. 3열 9번 데자와 로얄 밀크티 캔 900원. 3열 10번 데자와 로얄 밀크티 캔 900원.' style='position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;'>전체 상품목록</div><div style='text-align:center; margin-top:10px;'>
+<img src='dodadot-logo.png' width='120'>
+</div><button onclick='toggleLarge(this)' data-original='확대해서 보기' 
 style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px;'>확대해서 보기</button><p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 1번</span> <span class='item'>데미소다 애플 캔 900원</span></p>
 
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 2번</span> <span class='item'>데미소다 복숭아 캔 900원</span></p>
@@ -102,11 +104,11 @@ style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; bor
 
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 7번</span> <span class='item'>포카리스웨트 페트 1800원</span></p>
 
-<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 8번</span> <span class='item'>마신다 생수 페트 800원</span></p>
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 8번</span> <span class='item'>마신다 먹는샘물 페트 800원</span></p>
 
-<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 9번</span> <span class='item'>마신다 생수 페트 800원</span></p>
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 9번</span> <span class='item'>마신다 먹는샘물 페트 800원</span></p>
 
-<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 10번</span> <span class='item'>마신다 생수 페트 800원</span></p>
+<p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>1열 10번</span> <span class='item'>마신다 먹는샘물 페트 800원</span></p>
 
 <hr>
 <p style='margin:4px 0;'><span class='num' style='background:#eee; padding:2px 6px; border-radius:4px; font-weight:bold; display:inline-block;'>2열 1번</span> <span class='item'>포카리스웨트 캔 1000원</span></p>
@@ -153,8 +155,9 @@ style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; bor
 style='width:100%; padding:12px; margin:10px 0 4px 0; background:#000; color:#fff; border:none; border-radius:6px;'>
 점자 오류 제보
 </button><button onclick='window.open("https://dotogetherdot.github.io/daegu_MVM_braille/introduce_dodadot_MVM.html")' 
+style='width:100%; padding:12px; margin:10px 0; background:#000; color:#fff; border:none; border-radius:6px;'>
+프로젝트 소개 보기
+</button><button onclick='window.open("https://dotogetherdot.github.io/daegu_MVM_braille/introduce_dodadot_MVM.html")' 
 style='width:100%; padding:12px; margin:0 0 10px 0; background:#000; color:#fff; border:none; border-radius:6px;'>
 프로젝트 소개 보기
-</button><p style='text-align:center; margin-top:4px;'>문의: dodadot@naver.com</p><div style='text-align:center; margin-top:10px;'>
-<img src='dodadot-logo.png' width='120'>
-</div></body></html>
+</button><p style='text-align:center; margin-top:4px;'>문의: dodadot@naver.com</p></body></html>
